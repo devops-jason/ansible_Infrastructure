@@ -1,0 +1,5 @@
+---
+
+# kubernetes-node.yml used for Kubernetes node
+
+kubernetes_role: node

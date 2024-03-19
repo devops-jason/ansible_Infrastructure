@@ -1,0 +1,43 @@
+---
+
+# Github Roles
+roles:
+  - name: macbook_air
+    src: https://github.com/devops-jason/ansible-role-macbook_air
+    version: main
+    dest: ~/.ansible/roles/macbook_air
+
+  - name: bootstrap
+    src: https://github.com/devops-jason/ansible-role-bootstrap
+    version: main
+    dest: ~/.ansible/roles/bootstrap
+
+  - name: jenkins
+    src: https://github.com/devops-jason/ansible-role-jenkins
+    version: master
+    dest: ~/.ansible/roles/jenkins
+
+  - name: hifis.gitlab
+    version: v1.6.1
+
+  - name: java
+    src: https://github.com/devops-jason/ansible-role-java
+    version: master
+    dest: ~/.ansible/roles/java
+
+  - name: kubernetes
+    src: https://github.com/devops-jason/ansible-role-kubernetes
+    version: master
+    dest: ~/.ansible/roles/kubernetes
+
+  - name: geerlingguy.containerd
+    version: 1.3.1
+
+  - name: docker
+    src: https://github.com/devops-jason/ansible-role-docker
+    version: master
+    dest: ~/.ansible/roles/docker
+
+# Galaxy Collections
+collections:
+  - name: ansible.posix

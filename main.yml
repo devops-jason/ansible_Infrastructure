@@ -1,0 +1,38 @@
+---
+
+# main.yml used to configure general infrastructure
+
+- name: Bootstrap All
+  hosts: all:!macbook_air
+  become: true
+  gather_facts: false
+  roles:
+    - bootstrap
+
+- name: Update Macbook Air
+  hosts: macbook_air
+  become: false
+  roles:
+  #  - macbook_air
+
+- name: Update Jenkins CI
+  hosts: jenkins
+  become: true
+  roles:
+    - java
+    - jenkins
+    - hifis.gitlab
+
+- name: Update Kubernetes control-plane
+  hosts: kubernetes_controlplane
+  become: true
+  roles:
+    - docker
+    - kubernetes
+
+- name: Update Kubernetes node
+  hosts: kubernetes_node
+  become: true
+  roles:
+    - docker
+    - kubernetes

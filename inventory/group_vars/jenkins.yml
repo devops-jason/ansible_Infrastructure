@@ -1,0 +1,19 @@
+---
+
+# jenkins.yml used to define variables for Jenkins CI and Gitlab
+
+# Gitlab variables
+gitlab_domain: 'git.local'
+gitlab_external_url: https://{{ gitlab_domain }}/
+gitlab_edition: 'gitlab-ce'
+
+# Gitlab timezone
+gitlab_time_zone: 'UTC'
+
+# Gitlab backup retention
+gitlab_backup_keep_time: '604800'
+
+# Gitlab default theme
+gitlab_default_theme: '2'
+
+
